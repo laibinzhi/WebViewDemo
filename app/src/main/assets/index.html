@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebView</title>
+    <style type="text/css">
+        body{
+        background: #7F7F7F;
+        }
+
+        .btn{
+        line-height: 50px;
+        margin: 20px;
+        background: #cccccc;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<h2>WebView</h2>
+
+<div><input type="text" id="input" placeholder="请输入内容"></div>
+<br/>
+<div id="btn"><button >发送到Native</button ></div>
+<script type="text/javascript">
+    var btnEle = document.getElementById("btn");
+    var inputEle = document.getElementById("input");
+
+    btnEle.addEventListener("click",function(){
+      var str = inputEle.value;
+      if (window.lbzLauncher) {
+        lbzLauncher.setValue(str);
+      }else {
+        alert(str);
+      }
+    });
+
+    var remote = function(str){
+      inputEle.value = str
+    }
+</script>
+
+
+</body>
+
+</html>
