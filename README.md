@@ -2,7 +2,7 @@
 1. 允许WebView加载js
 
 ```
-        webView.getSettings().setJavaScriptEnabled(true);
+webView.getSettings().setJavaScriptEnabled(true);
 
 ```
 2. 编写js接口类
