@@ -202,7 +202,7 @@ public interface JSBridge {
 
 10. Demo的运行状态
 
-![image](http://pd4brty72.bkt.clouddn.com/webview_gif.gif)
+![image](http://lbz-blog.test.upcdn.net/post/webview_gif.gif)
 
 
 11. [最后附上项目地址](https://github.com/laibinzhi/WebViewDemo)
